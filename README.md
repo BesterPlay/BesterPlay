@@ -1,10 +1,7 @@
-- 👋 Hi, I’m @BesterPlay
-- 👀 I’m interested in coding
-- 🌱 I’m currently learning phyton, c++, html
-- 💞️ I’m looking to collaborate on no one
-- 👍 I want to be happy
+// How to install the phyton interpreter
 
-<!---
-BesterPlay/BesterPlay is a ✨ special ✨ repository because its `AboutMe.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+1.Double click the "setup"
+2.wait untill it gets installed
+3. Open it and here you go
+
+The site: 
