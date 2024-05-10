@@ -1,0 +1,183 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UpFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UpFrameNoDownCorner = Instance.new("Frame")
+local LuckyBlockExploit = Instance.new("TextLabel")
+local XCloseMainFrame = Instance.new("TextButton")
+local MainButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local MainTab = Instance.new("Frame")
+local WalkSpeedText = Instance.new("TextLabel")
+local WalkSpeedTextBox = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local JumpPowerText = Instance.new("TextLabel")
+local JumpPowerTextBox = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.270818233, 0, 0.15789482, 0)
+MainFrame.Size = UDim2.new(0, 632, 0, 499)
+
+UpFrame.Name = "UpFrame"
+UpFrame.Parent = MainFrame
+UpFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+UpFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UpFrame.BorderSizePixel = 0
+UpFrame.Size = UDim2.new(0, 632, 0, 64)
+
+UICorner.CornerRadius = UDim.new(0, 35)
+UICorner.Parent = UpFrame
+
+UpFrameNoDownCorner.Name = "UpFrameNoDownCorner"
+UpFrameNoDownCorner.Parent = UpFrame
+UpFrameNoDownCorner.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+UpFrameNoDownCorner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UpFrameNoDownCorner.BorderSizePixel = 0
+UpFrameNoDownCorner.Position = UDim2.new(0, 0, 0.330151081, 0)
+UpFrameNoDownCorner.Size = UDim2.new(0, 632, 0, 42)
+
+LuckyBlockExploit.Name = "LuckyBlockExploit"
+LuckyBlockExploit.Parent = UpFrame
+LuckyBlockExploit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LuckyBlockExploit.BackgroundTransparency = 1.000
+LuckyBlockExploit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LuckyBlockExploit.BorderSizePixel = 0
+LuckyBlockExploit.Position = UDim2.new(0.0284810122, 0, 0, 0)
+LuckyBlockExploit.Size = UDim2.new(0, 398, 0, 63)
+LuckyBlockExploit.Font = Enum.Font.FredokaOne
+LuckyBlockExploit.Text = "🍀Lucky Blocks Exploit🍀"
+LuckyBlockExploit.TextColor3 = Color3.fromRGB(255, 255, 255)
+LuckyBlockExploit.TextScaled = true
+LuckyBlockExploit.TextSize = 14.000
+LuckyBlockExploit.TextWrapped = true
+
+XCloseMainFrame.Name = "XCloseMainFrame"
+XCloseMainFrame.Parent = MainFrame
+XCloseMainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XCloseMainFrame.BackgroundTransparency = 1.000
+XCloseMainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+XCloseMainFrame.BorderSizePixel = 0
+XCloseMainFrame.Position = UDim2.new(0.922468364, 0, 0.0272151027, 0)
+XCloseMainFrame.Size = UDim2.new(0, 32, 0, 41)
+XCloseMainFrame.Font = Enum.Font.SourceSans
+XCloseMainFrame.Text = "X"
+XCloseMainFrame.TextColor3 = Color3.fromRGB(150, 150, 150)
+XCloseMainFrame.TextScaled = true
+XCloseMainFrame.TextSize = 14.000
+XCloseMainFrame.TextWrapped = true
+XCloseMainFrame.MouseButton1Down:Connect(function()
+	
+end)
+
+MainButton.Name = "MainButton"
+MainButton.Parent = MainFrame
+MainButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainButton.BorderSizePixel = 0
+MainButton.Position = UDim2.new(0.045886077, 0, 0.172344685, 0)
+MainButton.Size = UDim2.new(0, 117, 0, 50)
+MainButton.Font = Enum.Font.FredokaOne
+MainButton.Text = "Main"
+MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.TextSize = 30.000
+MainButton.TextWrapped = true
+MainButton.MouseButton1Down:Connect(function()
+	
+end)
+	
+
+UICorner_2.CornerRadius = UDim.new(15, 99999999)
+UICorner_2.Parent = MainButton
+
+MainTab.Name = "MainTab"
+MainTab.Parent = MainFrame
+MainTab.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+MainTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainTab.BorderSizePixel = 0
+MainTab.Position = UDim2.new(0.000248583063, 0, 0.272208601, 0)
+MainTab.Size = UDim2.new(0, 632, 0, 323)
+
+WalkSpeedText.Name = "WalkSpeedText"
+WalkSpeedText.Parent = MainTab
+WalkSpeedText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeedText.BackgroundTransparency = 1.000
+WalkSpeedText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedText.BorderSizePixel = 0
+WalkSpeedText.Position = UDim2.new(0.0443037972, 0, 0.148606807, 0)
+WalkSpeedText.Size = UDim2.new(0, 200, 0, 50)
+WalkSpeedText.Font = Enum.Font.FredokaOne
+WalkSpeedText.Text = "WalkSpeed"
+WalkSpeedText.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeedText.TextScaled = true
+WalkSpeedText.TextSize = 14.000
+WalkSpeedText.TextWrapped = true
+
+WalkSpeedTextBox.Name = "WalkSpeedTextBox"
+WalkSpeedTextBox.Parent = MainTab
+WalkSpeedTextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeedTextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedTextBox.BorderSizePixel = 0
+WalkSpeedTextBox.Position = UDim2.new(0.439624846, 0, 0.148606807, 0)
+WalkSpeedTextBox.Size = UDim2.new(0, 205, 0, 50)
+WalkSpeedTextBox.Font = Enum.Font.SourceSans
+WalkSpeedTextBox.PlaceholderText = "16"
+WalkSpeedTextBox.Text = ""
+WalkSpeedTextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedTextBox.TextScaled = true
+WalkSpeedTextBox.TextSize = 14.000
+WalkSpeedTextBox.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 17)
+UICorner_3.Parent = WalkSpeedTextBox
+
+JumpPowerText.Name = "JumpPowerText"
+JumpPowerText.Parent = MainTab
+JumpPowerText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerText.BackgroundTransparency = 1.000
+JumpPowerText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpPowerText.BorderSizePixel = 0
+JumpPowerText.Position = UDim2.new(0.0443037972, 0, 0.346749216, 0)
+JumpPowerText.Size = UDim2.new(0, 200, 0, 50)
+JumpPowerText.Font = Enum.Font.FredokaOne
+JumpPowerText.Text = "JumpPower"
+JumpPowerText.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerText.TextScaled = true
+JumpPowerText.TextSize = 14.000
+JumpPowerText.TextWrapped = true
+
+JumpPowerTextBox.Name = "JumpPowerTextBox"
+JumpPowerTextBox.Parent = MainTab
+JumpPowerTextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerTextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpPowerTextBox.BorderSizePixel = 0
+JumpPowerTextBox.Position = UDim2.new(0.439624846, 0, 0.346749216, 0)
+JumpPowerTextBox.Size = UDim2.new(0, 205, 0, 50)
+JumpPowerTextBox.Font = Enum.Font.SourceSans
+JumpPowerTextBox.PlaceholderText = "50"
+JumpPowerTextBox.Text = ""
+JumpPowerTextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpPowerTextBox.TextScaled = true
+JumpPowerTextBox.TextSize = 14.000
+JumpPowerTextBox.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 17)
+UICorner_4.Parent = JumpPowerTextBox
+
+UICorner_5.CornerRadius = UDim.new(0, 35)
+UICorner_5.Parent = MainFrame
