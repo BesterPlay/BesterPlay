@@ -25,6 +25,7 @@ local UICorner_5 = Instance.new("UICorner")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
@@ -33,6 +34,8 @@ MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.270818233, 0, 0.15789482, 0)
 MainFrame.Size = UDim2.new(0, 632, 0, 499)
+MainFrame.Active = true
+MainFrame.Draggable = true
 
 UpFrame.Name = "UpFrame"
 UpFrame.Parent = MainFrame
